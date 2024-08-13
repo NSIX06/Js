@@ -1,0 +1,76 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<title></title>
+</head>
+<body>
+<h1> Exemplos em Javascript</h1>
+
+<h2>Exemplo 1:</h2>
+
+<button class="btn btn-primary" type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Clique para mostrar a data e hora.</button>
+
+<br><br>
+
+<button class="btn btn-primary" type="button" onclick='document.getElementById("demo").innerHTML = "Olá Javascript!"'>Mostrar texto</button>
+
+<p id="demo"></p>
+
+
+--------------------------------------
+<h2>Exemplo 2:</h2>
+<p>Imagens dinâmicas</p>
+
+<button type="button" class="btn btn-primary" onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Ascender</button> 
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button class="btn btn-primary" onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Apagar</button>
+<br><br>
+<button class="btn btn-primary" type="button" onclick="document.getElementById('myImage').style.visibility='hidden'">Esconder</button>
+
+<button class="btn btn-primary" type="button" onclick="document.getElementById('myImage').style.visibility='visible'">Mostrar</button>
+
+<br><br>
+
+
+
+--------------------------------------
+<h2>Exemplo 3:</h2>
+<p>Alterar estilo</p>
+<p id="demo3">JavaScript pode alterar o estilo de um elemento HTML.</p>
+
+<button class="btn btn-primary" type="button" onclick="document.getElementById('demo3').style.fontSize='35px'">Aumentar</button> <br><br>
+
+
+<button class="btn btn-primary" type="button" onclick="document.getElementById('demo3').style.fontSize='15px'">Diminir</button> <br><br>
+
+
+
+
+--------------------------------------
+<h2>Exemplo 4:</h2>
+<p>Loop</p>
+
+
+<p id="loop"></p>
+
+<script>
+let text = "";
+let tabuada = 8;
+let total = 0;
+for (let i = 10; i => 0; i--) {
+  text += tabuada + " x " + i + " = " + tabuada * i + "<br>";
+}
+
+document.getElementById("loop").innerHTML = text;
+</script>
+
+
+
+</body>
+</html>
